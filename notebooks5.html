@@ -394,7 +394,7 @@ memory usage: 7.2+ KB
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-f6459b44-73ed-41a4-8cb6-92f557e7b938">
+  <div id="df-3218ba85-55fb-45d6-bea5-dd4e008f2be6">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -516,7 +516,7 @@ memory usage: 7.2+ KB
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-f6459b44-73ed-41a4-8cb6-92f557e7b938')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-3218ba85-55fb-45d6-bea5-dd4e008f2be6')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -567,12 +567,12 @@ memory usage: 7.2+ KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-f6459b44-73ed-41a4-8cb6-92f557e7b938 button.colab-df-convert');
+          document.querySelector('#df-3218ba85-55fb-45d6-bea5-dd4e008f2be6 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-f6459b44-73ed-41a4-8cb6-92f557e7b938');
+          const element = document.querySelector('#df-3218ba85-55fb-45d6-bea5-dd4e008f2be6');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -605,7 +605,7 @@ memory usage: 7.2+ KB
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-462463fc-ca93-442f-8688-0b0ec9a50247">
+  <div id="df-6e5c8861-9fca-44ec-9604-d9bdd8593910">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -648,7 +648,7 @@ memory usage: 7.2+ KB
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-462463fc-ca93-442f-8688-0b0ec9a50247')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-6e5c8861-9fca-44ec-9604-d9bdd8593910')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -699,12 +699,12 @@ memory usage: 7.2+ KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-462463fc-ca93-442f-8688-0b0ec9a50247 button.colab-df-convert');
+          document.querySelector('#df-6e5c8861-9fca-44ec-9604-d9bdd8593910 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-462463fc-ca93-442f-8688-0b0ec9a50247');
+          const element = document.querySelector('#df-6e5c8861-9fca-44ec-9604-d9bdd8593910');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -781,14 +781,13 @@ memory usage: 7.2+ KB
 <img alt="_images/notebooks5_8_5.png" src="_images/notebooks5_8_5.png" />
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset_url</span><span class="o">=</span><span class="s2">&quot;https://raw.githubusercontent.com/nurasmaul4/datamining/main/Iris.csv&quot;</span>
-<span class="n">data</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">dataset_url</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
+<p><strong>Hitung data</strong></p>
+<ol class="simple">
+<li><p>Pisahkan feature “Species” dari dataframe.</p></li>
+<li><p>Tentukan nilai K atau centroid</p></li>
+<li><p>Hitung jarak data terhadap centroid</p></li>
+<li><p>Hitung rata-rata data per-cluster</p></li>
+</ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span>
@@ -796,211 +795,14 @@ memory usage: 7.2+ KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html">
-  <div id="df-c1e4cadb-d778-49c0-a8c0-4ec52c81d7c5">
-    <div class="colab-df-container">
-      <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">NameError</span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">7</span><span class="o">-</span><span class="n">c5d84736ba45</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">data</span>
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>SepalLengthCm</th>
-      <th>SepalWidthCm</th>
-      <th>PetalLengthCm</th>
-      <th>PetalWidthCm</th>
-      <th>Species</th>
-    </tr>
-    <tr>
-      <th>Id</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-      <td>5.1</td>
-      <td>3.5</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>4.9</td>
-      <td>3.0</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4.7</td>
-      <td>3.2</td>
-      <td>1.3</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>4.6</td>
-      <td>3.1</td>
-      <td>1.5</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>5.0</td>
-      <td>3.6</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>146</th>
-      <td>6.7</td>
-      <td>3.0</td>
-      <td>5.2</td>
-      <td>2.3</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>147</th>
-      <td>6.3</td>
-      <td>2.5</td>
-      <td>5.0</td>
-      <td>1.9</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>148</th>
-      <td>6.5</td>
-      <td>3.0</td>
-      <td>5.2</td>
-      <td>2.0</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>149</th>
-      <td>6.2</td>
-      <td>3.4</td>
-      <td>5.4</td>
-      <td>2.3</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>150</th>
-      <td>5.9</td>
-      <td>3.0</td>
-      <td>5.1</td>
-      <td>1.8</td>
-      <td>Iris-virginica</td>
-    </tr>
-  </tbody>
-</table>
-<p>150 rows × 5 columns</p>
+<span class="ne">NameError</span>: name &#39;data&#39; is not defined
+</pre></div>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c1e4cadb-d778-49c0-a8c0-4ec52c81d7c5')"
-              title="Convert this dataframe to an interactive table."
-              style="display:none;">
-
-  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-       width="24px">
-    <path d="M0 0h24v24H0V0z" fill="none"/>
-    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
-  </svg>
-      </button>
-
-  <style>
-    .colab-df-container {
-      display:flex;
-      flex-wrap:wrap;
-      gap: 12px;
-    }
-
-    .colab-df-convert {
-      background-color: #E8F0FE;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      fill: #1967D2;
-      height: 32px;
-      padding: 0 0 0 0;
-      width: 32px;
-    }
-
-    .colab-df-convert:hover {
-      background-color: #E2EBFA;
-      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-      fill: #174EA6;
-    }
-
-    [theme=dark] .colab-df-convert {
-      background-color: #3B4455;
-      fill: #D2E3FC;
-    }
-
-    [theme=dark] .colab-df-convert:hover {
-      background-color: #434B5C;
-      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-      fill: #FFFFFF;
-    }
-  </style>
-
-      <script>
-        const buttonEl =
-          document.querySelector('#df-c1e4cadb-d778-49c0-a8c0-4ec52c81d7c5 button.colab-df-convert');
-        buttonEl.style.display =
-          google.colab.kernel.accessAllowed ? 'block' : 'none';
-
-        async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c1e4cadb-d778-49c0-a8c0-4ec52c81d7c5');
-          const dataTable =
-            await google.colab.kernel.invokeFunction('convertToInteractive',
-                                                     [key], {});
-          if (!dataTable) return;
-
-          const docLinkHtml = 'Like what you see? Visit the ' +
-            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
-            + ' to learn more about interactive tables.';
-          element.innerHTML = '';
-          dataTable['output_type'] = 'display_data';
-          await google.colab.output.renderOutput(dataTable, element);
-          const docLink = document.createElement('div');
-          docLink.innerHTML = docLinkHtml;
-          element.appendChild(docLink);
-        }
-      </script>
-    </div>
-  </div>
-</div></div>
+</div>
 </div>
 </section>
 
